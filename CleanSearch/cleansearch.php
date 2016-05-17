@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 function pswp_cleansearch() {
     if ( is_search() && ! empty( $_GET['s'] ) ) {
-        wp_redirect( home_url( "/searching/" ) . urlencode( get_query_var( 's' ) ) );
+        wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
         exit();
     }
 }
